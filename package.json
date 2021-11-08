@@ -1,7 +1,7 @@
 {
-  "name": "mattscharts",
-  "version": "0.1.0",
-  "private": true,
+  "name": "gammaflauge-mattscharts",
+  "version": "0.1.1",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -52,11 +52,28 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
     "@storybook/node-logger": "^6.3.12",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.12"
-  }
+    "@storybook/react": "^6.3.12",
+    "cross-env": "^7.0.3"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
+  "description": "experimenting with npm and storybook",
+  "main": "dist/index.js",
+  "repository": "https://github.com/gammaflauge/mattscharts.git",
+  "author": "matt devine <mddevine@gmail.com>",
+  "license": "MIT"
 }
