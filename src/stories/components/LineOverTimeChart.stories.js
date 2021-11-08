@@ -1,5 +1,7 @@
 import { LineOverTimeChart } from "../../components/LineOverTimeChart";
 
+import { genHospStays } from "../../mock-data/genHospStays";
+
 export default {
   component: LineOverTimeChart,
   title: "Charts/LineOverTimeChart",
@@ -9,15 +11,9 @@ const Template = (args) => <LineOverTimeChart {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  data: [
-    { x: 0, y: 50 },
-    { x: 10, y: 100 },
-    { x: 200, y: 200 },
-    { x: 250, y: 125 },
-    { x: 300, y: 105 },
-  ],
-  getX: (d) => d.x,
-  getY: (d) => d.y,
+  data: genHospStays(30, 123),
+  getX: (d) => d.id,
+  getY: (d) => d.los,
 };
 
 export const Small = Template.bind({});
