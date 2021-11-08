@@ -4,6 +4,15 @@ Experimenting with [storybook.js](https://storybook.js.org/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## publishing
+
+published to npm as [gammaflauge-mattscharts](https://www.npmjs.com/package/gammaflauge-mattscharts).
+
+### updating
+
+1. `yarn build`
+2. `yarn publish`
+
 ## Available Scripts
 
 In the project directory, you can run:

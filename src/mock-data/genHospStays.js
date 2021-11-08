@@ -4,6 +4,8 @@ import dayjs from "dayjs";
 const standardDateFormat = "YYYY-MM-DD HH:mm:00";
 const formatDate = (date) => dayjs(date).format(standardDateFormat);
 
+const admissionSources = ["ED", "SDU", "Transport", "Direct Admission"];
+
 export function genHospStays(numStays, randomSeed) {
   if (randomSeed) faker.seed(randomSeed);
   const hospStays = [];
@@ -14,8 +16,9 @@ export function genHospStays(numStays, randomSeed) {
     hospStays.push({
       id: i,
       name: faker.name.findName(),
+      admitSource: faker.random.arrayElement(admissionSources),
       admit: formatDate(admit),
-      los,
+      los: los,
       discharge: formatDate(discharge),
     });
   }

@@ -1,0 +1,2 @@
+# including so that npm publish does not default to using .gitignore
+# https://stackoverflow.com/questions/27049192/npm-publish-isnt-including-all-my-files
