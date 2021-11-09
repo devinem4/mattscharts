@@ -1,4 +1,4 @@
-const defaults = {
+export const defaults = {
   width: 800,
   height: 480,
   margin: { top: 20, right: 20, bottom: 40, left: 40 },
@@ -34,5 +34,26 @@ export function BaseChart({
         {children}
       </g>
     </svg>
+  );
+}
+
+export function NoDataChart({ message = "No Data", ...restProps }) {
+  const innerWidth = getPlotAreaWidth(restProps);
+  const innerHeight = getPlotAreaHeight(restProps);
+
+  return (
+    <BaseChart {...restProps}>
+      <text
+        x={innerWidth / 2}
+        y={innerHeight / 2}
+        textAnchor="middle"
+        alignmentBaseline="middle"
+        fontSize="20"
+        fontWeight="bold"
+        fill="black"
+      >
+        {message}
+      </text>
+    </BaseChart>
   );
 }

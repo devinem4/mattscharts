@@ -3,7 +3,12 @@ import { LinePath } from "@visx/shape";
 import { scaleLinear } from "@visx/scale";
 import { AxisLeft, AxisBottom } from "@visx/axis";
 import { extent } from "d3-array";
-import { BaseChart, getPlotAreaHeight, getPlotAreaWidth } from "./BaseChart";
+import {
+  BaseChart,
+  NoDataChart,
+  getPlotAreaHeight,
+  getPlotAreaWidth,
+} from "./BaseChart";
 
 export function LineOverTimeChart({
   data = [],
@@ -11,6 +16,10 @@ export function LineOverTimeChart({
   getY = (d) => d.y,
   ...restProps
 }) {
+  if (data.length === 0) {
+    return <NoDataChart {...restProps} />;
+  }
+
   const innerWidth = getPlotAreaWidth(restProps);
   const innerHeight = getPlotAreaHeight(restProps);
 

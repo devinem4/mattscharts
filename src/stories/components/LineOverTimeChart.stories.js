@@ -23,9 +23,8 @@ Small.args = {
   ...Default.args,
 };
 
-export const Tiny = Template.bind({});
-Tiny.args = {
-  width: 75,
-  height: 75,
+export const NoData = Template.bind({});
+NoData.args = {
   ...Default.args,
+  data: [],
 };
