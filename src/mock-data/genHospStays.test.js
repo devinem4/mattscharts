@@ -9,8 +9,8 @@ test("generates correct number of stays", () => {
 
 test("same names are generated every time when seeded", () => {
   expect(seededData[0].name).toBe("Allen Pollich");
-  expect(seededData[1].name).toBe("Ben Satterfield");
-  expect(seededData[4].name).toBe("Miss Jeanne Medhurst");
+  expect(seededData[1].name).toBe("Lowell Wuckert");
+  expect(seededData[4].name).toBe("Tina Kiehn");
 });
 
 test("new stays are generated with a different seed", () => {
