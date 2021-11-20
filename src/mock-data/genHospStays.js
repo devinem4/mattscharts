@@ -1,8 +1,6 @@
 import faker from "faker";
 import dayjs from "dayjs";
-
-const standardDateFormat = "YYYY-MM-DD HH:mm:00";
-const formatDate = (date) => dayjs(date).format(standardDateFormat);
+import { formatDate } from "./dateHelpers";
 
 const admissionSources = ["ED", "SDU", "Transport", "Direct Admission"];
 
