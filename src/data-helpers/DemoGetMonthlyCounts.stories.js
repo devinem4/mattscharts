@@ -1,12 +1,12 @@
 import { getMonthlyCounts } from "./counts";
 import { genHospStays } from "../mock-data/genHospStays";
 
-function DemoGetMonthlyCounts({ numStays, randomSeed }) {
+function DemoGetMonthlyCounts({ numStays, randomSeed, zeroFill }) {
   const rawData = genHospStays(numStays, randomSeed);
   const data = getMonthlyCounts(rawData, (d) => d.admit);
   return (
     <>
-      <h3>Here's {rawData.length} generated (fake) from monthly counts</h3>
+      <h3>Here's {rawData.length} obs aggregated to monthly counts</h3>
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </>
   );
@@ -18,8 +18,16 @@ export default {
 };
 
 const Template = (args) => <DemoGetMonthlyCounts {...args} />;
-export const Sample = Template.bind({});
-Sample.args = {
+export const NoZeroFill = Template.bind({});
+NoZeroFill.args = {
   numStays: 111,
   randomSeed: 123,
+  zeroFill: false,
+};
+
+export const ZeroFilled = Template.bind({});
+ZeroFilled.args = {
+  numStays: 18,
+  randomSeed: 1234,
+  zeroFill: true,
 };
