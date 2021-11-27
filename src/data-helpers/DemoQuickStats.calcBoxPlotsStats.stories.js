@@ -16,12 +16,14 @@ function DemoQuickStatsCalcBoxPlotStats({}) {
   return (
     <>
       <h3>
-        <pre>calcBoxPlotStats(rawData, (d) => d.los)</pre>
-        yields:
+        <pre>
+          const rawData = genHospStays(10, 123);{"\n"}calcBoxPlotStats(rawData,
+          (d) =&gt; d.los);
+        </pre>
       </h3>
       <pre>{JSON.stringify(boxPlotStats, null, 2)}</pre>
-      <h3>rawData (fake)</h3>
-      <pre>{JSON.stringify(rawData, null, 2)}</pre>
+      <h3>rawData.slice(0, 3)</h3>
+      <pre>{JSON.stringify(rawData.slice(0, 3), null, 2)}</pre>
     </>
   );
 }
