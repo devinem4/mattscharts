@@ -3695,7 +3695,7 @@
   dependencies:
     "@types/d3-time" "^2"
 
-"@types/d3-shape@^1.3.1":
+"@types/d3-shape@^1.3.1", "@types/d3-shape@^1.3.2":
   version "1.3.8"
   resolved "https://registry.npmjs.org/@types/d3-shape/-/d3-shape-1.3.8.tgz"
   integrity sha512-gqfnMz6Fd5H6GOLYixOZP/xlrMtJms9BaS+6oWxTKHNqPGZ93BkWWupQSCYm6YHqx6h9wjRupuJb90bun6ZaYg==
@@ -4451,6 +4451,19 @@
     d3-path "^1.0.5"
     d3-shape "^1.2.0"
     lodash "^4.17.21"
+    prop-types "^15.5.10"
+
+"@visx/stats@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@visx/stats/-/stats-2.2.2.tgz#617109481c0649bc7babd11b15215589dfbacca9"
+  integrity sha512-HQcR9r8c0bD/YYWh1f7dZd2kDmazJ2ZoeGsJf3hvp8QnxAJoMEdukOt7q2Sp5uaQ58fJOMYuIKf2s68+M4Z6ig==
+  dependencies:
+    "@types/d3-shape" "^1.3.2"
+    "@types/react" "*"
+    "@visx/group" "2.1.0"
+    "@visx/scale" "2.2.2"
+    classnames "^2.3.1"
+    d3-shape "^1.2.0"
     prop-types "^15.5.10"
 
 "@visx/text@2.3.0":
