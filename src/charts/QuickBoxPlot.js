@@ -3,10 +3,7 @@ import { timeMonth } from "d3-time";
 import { scaleLinear, scaleBand } from "@visx/scale";
 import { AxisLeft, AxisBottom } from "@visx/axis";
 import { BoxPlot as VisxBoxPlot } from "@visx/stats";
-import {
-  calcBoxPlotStats,
-  rollupAndSummarize,
-} from "../data-helpers/quickStats";
+import { calcBoxPlotStats, rollupAndSummarize } from "../calcs/quickStats";
 import {
   BaseChart,
   NoDataChart,
@@ -63,7 +60,6 @@ export function BoxPlotMonthly({ data = [], valueAcc, dateAcc, ...restProps }) {
             outliers={month.value.outliers}
           />
         ))}
-        */}
       </BaseChart>
     </>
   );

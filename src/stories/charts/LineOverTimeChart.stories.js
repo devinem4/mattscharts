@@ -1,5 +1,5 @@
-import { LineOverTimeChart } from "./LineOverTimeChart";
-import { genHospStays } from "../mock-data/genHospStays";
+import { LineOverTimeChart } from "../../charts/LineOverTimeChart";
+import { genHospStays } from "../../mock-data/genHospStays";
 
 export default {
   component: LineOverTimeChart,

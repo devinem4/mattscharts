@@ -1,6 +1,5 @@
-import { calcBoxPlotStats } from "../data-helpers/quickStats";
-import { BoxPlotMonthly } from "./QuickBoxPlot";
-import { genHospStays } from "../mock-data/genHospStays";
+import { BoxPlotMonthly } from "../../charts/QuickBoxPlot";
+import { genHospStays } from "../../mock-data/genHospStays";
 
 function DemoQuickBoxPlot({}) {
   const rawData = genHospStays(111, 123);
@@ -26,7 +25,7 @@ const rawData = genHospStays(111, 123);
 }
 export default {
   component: DemoQuickBoxPlot,
-  title: "Charts/QuickBoxPlot",
+  title: "Charts/QuickBoxPlot/BoxPlotMonthly",
 };
 
 const Template = (args) => <DemoQuickBoxPlot {...args} />;

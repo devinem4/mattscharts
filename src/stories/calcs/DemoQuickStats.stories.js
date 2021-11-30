@@ -1,5 +1,5 @@
-import { monthlyCounts } from "./quickStats";
-import { genHospStays } from "../mock-data/genHospStays";
+import { monthlyCounts } from "../../calcs/quickStats";
+import { genHospStays } from "../../mock-data/genHospStays";
 
 function DemoQuickStats({}) {
   const rawData = genHospStays(10, 123);

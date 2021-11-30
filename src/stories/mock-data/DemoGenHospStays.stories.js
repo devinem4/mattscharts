@@ -1,4 +1,4 @@
-import { genHospStays } from "./genHospStays";
+import { genHospStays } from "../../mock-data/genHospStays";
 
 function DemoHospStays({ numStays, randomSeed }) {
   const data = genHospStays(numStays, randomSeed);
