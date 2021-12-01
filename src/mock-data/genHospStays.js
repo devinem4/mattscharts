@@ -1,6 +1,6 @@
 import faker from "faker";
 import dayjs from "dayjs";
-import { formatDate } from "./dateHelpers";
+import { formatDate } from "mock-data/dateHelpers";
 
 const admissionSources = ["ED", "SDU", "Transport", "Direct Admission"];
 

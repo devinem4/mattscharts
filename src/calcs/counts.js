@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import { timeDay, timeMonth, timeWeek, timeYear } from "d3-time";
 import { rollup } from "d3-array";
-import { formatDate } from "../mock-data/dateHelpers";
+import { formatDate } from "mock-data/dateHelpers";
 
 export function getIntervalCounts(data, getDate, interval) {
   /* interval is a d3.time interval */

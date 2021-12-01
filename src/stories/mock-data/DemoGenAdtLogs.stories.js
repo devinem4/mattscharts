@@ -1,4 +1,4 @@
-import { genAdtLogs } from "../../mock-data/genAdtLogs";
+import { genAdtLogs } from "mock-data/genAdtLogs";
 
 function DemoAdtLogs({ numStays, randomSeed }) {
   const data = genAdtLogs(numStays, randomSeed);

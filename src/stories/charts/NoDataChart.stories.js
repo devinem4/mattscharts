@@ -1,4 +1,4 @@
-import { NoDataChart } from "../../charts/BaseChart";
+import { NoDataChart } from "charts/BaseChart";
 
 export default {
   component: NoDataChart,

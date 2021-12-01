@@ -3,13 +3,13 @@ import { timeMonth } from "d3-time";
 import { scaleLinear, scaleBand } from "@visx/scale";
 import { AxisLeft, AxisBottom } from "@visx/axis";
 import { BoxPlot as VisxBoxPlot } from "@visx/stats";
-import { calcBoxPlotStats, rollupAndSummarize } from "../calcs/quickStats";
+import { calcBoxPlotStats, rollupAndSummarize } from "calcs/quickStats";
 import {
   BaseChart,
   NoDataChart,
   getPlotAreaHeight,
   getPlotAreaWidth,
-} from "./BaseChart";
+} from "charts/BaseChart";
 
 export function BoxPlotMonthly({ data = [], valueAcc, dateAcc, ...restProps }) {
   if (data.length === 0) {

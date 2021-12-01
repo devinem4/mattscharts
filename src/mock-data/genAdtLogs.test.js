@@ -1,4 +1,4 @@
-import { genAdtLogs } from "./genAdtLogs";
+import { genAdtLogs } from "mock-data/genAdtLogs";
 
 const seededData = genAdtLogs(5, 123);
 const seededData2 = genAdtLogs(3, 321);

@@ -1,6 +1,6 @@
 import faker from "faker";
 import dayjs from "dayjs";
-import { formatDate } from "./dateHelpers";
+import { formatDate } from "mock-data/dateHelpers";
 
 const genLos = (min, max) => {
   return () =>

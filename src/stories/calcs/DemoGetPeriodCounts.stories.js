@@ -1,5 +1,5 @@
-import { getPeriodCounts } from "../../calcs/counts";
-import { genHospStays } from "../../mock-data/genHospStays";
+import { getPeriodCounts } from "calcs/counts";
+import { genHospStays } from "mock-data/genHospStays";
 
 function DemoGetPeriodCounts({ numStays, randomSeed, period }) {
   const rawData = genHospStays(numStays, randomSeed);

@@ -1,5 +1,5 @@
-import { BoxPlotMonthly } from "../../charts/QuickBoxPlot";
-import { genHospStays } from "../../mock-data/genHospStays";
+import { BoxPlotMonthly } from "charts/QuickBoxPlot";
+import { genHospStays } from "mock-data/genHospStays";
 
 function DemoQuickBoxPlot({}) {
   const rawData = genHospStays(111, 123);

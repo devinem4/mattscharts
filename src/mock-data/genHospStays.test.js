@@ -1,4 +1,4 @@
-import { genHospStays } from "./genHospStays";
+import { genHospStays } from "mock-data/genHospStays";
 
 const seededData = genHospStays(5, 123);
 const seededData2 = genHospStays(3, 321);

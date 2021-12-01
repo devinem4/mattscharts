@@ -8,7 +8,7 @@ import {
   NoDataChart,
   getPlotAreaHeight,
   getPlotAreaWidth,
-} from "./BaseChart";
+} from "charts/BaseChart";
 
 export function LineOverTimeChart({
   data = [],

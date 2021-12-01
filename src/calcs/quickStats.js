@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import { count, min, max, quantileSorted, rollup } from "d3-array";
 import { timeMonth } from "d3-time";
-import { formatDate } from "../mock-data/dateHelpers";
+import { formatDate } from "mock-data/dateHelpers";
 
 export function zeroFillMissingData(rolledUp, interval) {
   const dates = [...rolledUp.keys()];

@@ -1,6 +1,6 @@
 import { timeMonth, timeYear } from "d3-time";
-import { getIntervalCounts } from "../../calcs/counts";
-import { genHospStays } from "../../mock-data/genHospStays";
+import { getIntervalCounts } from "calcs/counts";
+import { genHospStays } from "mock-data/genHospStays";
 
 function DemoGetIntervalCounts({
   numStays,

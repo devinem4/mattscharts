@@ -1,5 +1,5 @@
-import { calcBoxPlotStats } from "../../calcs/quickStats";
-import { genHospStays } from "../../mock-data/genHospStays";
+import { calcBoxPlotStats } from "calcs/quickStats";
+import { genHospStays } from "mock-data/genHospStays";
 
 function DemoQuickStatsCalcBoxPlotStats({}) {
   const rawData = genHospStays(10, 123);
